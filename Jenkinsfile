@@ -8,7 +8,7 @@ node {
         bat "mvn -B -DskipTests clean install"
     }
     stage('CF Push'){
-           bat "cf login -a api.run.pivotal.io --skip-ssl-validation -u adaragunchi@gmail.com -p Puma@328"
+           bat "cf login -a api.run.pivotal.io --skip-ssl-validation -u adaragunchi@gmail.com -p Puma@328 -o manjunath328 -s applicationService"
            bat "cf push"
      }
 }
